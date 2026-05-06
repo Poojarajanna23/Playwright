@@ -43,9 +43,10 @@ jobs:
       
 
         
-         client-id: f5c64546-3516-4134-9b08-ffc0d373928a
-         tenant-id: f6978f24-fd4d-4d14-9225-01afe045ac13
-         subscription-id: 30b76355-c65e-4d19-bec7-2a29bc3f8c76
+         auth-type: SERVICE_PRINCIPAL
+         client-id: ${{ secrets.AZURE_CLIENT_ID }}
+         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+         client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
 
     - name: Run Playwright tests
 
