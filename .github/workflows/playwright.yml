@@ -25,8 +25,8 @@ jobs:
         uses: azure/login@v2
         with:
           auth-type: SERVICE_PRINCIPAL
-          client-id: ${{ fromJson(secrets.AZURE_CREDENTIALS).appId }}
-          tenant-id: ${{ fromJson(secrets.AZURE_CREDENTIALS).tenant }}
+          client-id: ${{ secrets.AZURE_CREDENTIALS.appId }}
+          tenant-id: ${{ secrets.AZURE_CREDENTIALS.tenant }}
           client-secret: ${{ fromJson(secrets.AZURE_CREDENTIALS).password }}
           subscription-id: 30b76355-c65e-4d19-bec7-2a29bc3f8c76
 
