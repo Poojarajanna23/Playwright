@@ -47,6 +47,7 @@ jobs:
          client-id: ${{ fromJson(secrets.AZURE_CREDENTAILS).appId }}
          tenant-id: ${{ fromJson(secrets.AZURE_CREDENTAILS).tenant }}
          client-secret: ${{ fromJson(secrets.AZURE_CREDENTAILS).password }}
+         subscription-id: 30b76355-c65e-4d19-bec7-2a29bc3f8c76
 
     - name: Run Playwright tests
 
