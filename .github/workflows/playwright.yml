@@ -40,8 +40,12 @@ jobs:
       uses: azure/login@v2
 
       with:
+      
 
-        creds: ${{ secrets.AZURE_CREDENTAILS }}
+        
+         client-id: f5c64546-3516-4134-9b08-ffc0d373928a
+         tenant-id: f6978f24-fd4d-4d14-9225-01afe045ac13
+         subscription-id: 30b76355-c65e-4d19-bec7-2a29bc3f8c76
 
     - name: Run Playwright tests
 
